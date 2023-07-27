@@ -86,14 +86,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   
-   /*---------------------------------Base header----------------------------- */
+  
    .content-wrapper {
-     border: 3px dotted red;
      width:90%;
      margin: 50px 0;
    }
 
+/* ---------------------------------- Base Header -Footer Styles ------------------------ */
    header {
      display: flex;
      justify-content: center;
@@ -224,8 +223,8 @@ textarea {
 About Page
 ============================================================================= */
    .mission {
-    display: flex;
-    justify-content: center;
+     display: flex;
+     justify-content: center;
    }
 
    .contact-section {
@@ -240,7 +239,6 @@ About Page
    /* ============================================================================
    FAQ Page
    ============================================================================= */
-
    .faq {
      display: flex;
      justify-content: center;
@@ -250,17 +248,18 @@ About Page
      display: flex;
      justify-content: center;
      align-items: flex-start;
-     flex-flow: row wrap;
+     flex-flow: wrap;
      margin: 50px 0 0 0;
    }
 
    .faq h2 {
-     margin: 40px;
+     margin-bottom: 40px;
    }
 
    .faq-content {
      margin-bottom: 50px;
    }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -350,6 +349,8 @@ About Page
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
+  /* tablet styles here */
+
     /* General styles */
     .content-wrapper {
       max-width: 640px;
@@ -374,11 +375,10 @@ About Page
 
     header nav ul {
       justify-content: space-between;
-
     }    
 
     .header-divider {
-        display: none;
+      display: none;
     }
 
     /* Hero Area */
@@ -386,69 +386,113 @@ About Page
     /* Aside */
 
     aside .content-wrapper {
-        margin: 50px 0;
-        display: flex;
-        justify-content: space-between;
-        align-content: flex-start;
+      margin: 50px 0;
+      display: flex;
+      justify-content: space-between;
+      align-content: flex-start;
     }
 
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
-      width: 40%
+      width: 40%;
       margin: 0;
     }
 
-/* Features */
+ /* Features */
 
-.features article {
+ .features article {
   display: flex;
   align-items: center;
   flex-flow: column wrap;
   flex-basis: 50%;
-}
+  } 
 
-.features .features-item-description {
+ .features .features-item-description {
     width: 50%;
-}
+  }
 
-/* Reviews */
+  /* Reviews */
 
-.reviews article {
+  .reviews article {
   display: flex;
   justify-content: space-between;
-}
+  }
 
-.reviews article div {
+ .reviews article div {
   width: 49%;
-}
+  }
 
-/* Footer */
+ /* Footer */
 
-footer .content-wrapper {
+ footer .content-wrapper {
   width: 65%;
-}
+  }
 
-.footer-content {
+ .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  }
 
-footer .contact {
-    margin-bottom: 0;
-}
+  footer .contact {
+  margin-bottom: 0;
+  }
 
-footer .copyright {
+  footer .copyright {
   width: 100%;
+  }
+/*===================================================================================
+  About Page
+==================================================================================== */
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
 }
 
+.mission-content p {
+  width: 45%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/* ===================================================================================
+  FAQ Page
+  ==================================================================================== */
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 
 
-@media only screen and (min-width: 1200px) {
-    /*Desktop styles here*/
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+/* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
