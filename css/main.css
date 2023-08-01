@@ -224,6 +224,7 @@ textarea {
    .hero-area {
     display: flex;
     justify-content: center;
+    background: url('../img/')
    }
 
    .hero-area h1 {
