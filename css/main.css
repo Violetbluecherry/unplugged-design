@@ -131,6 +131,14 @@ textarea {
     line-height: 1.285;
   }
 
+  img {
+    width: 100%;
+  }
+
+  figure {
+    margin: 0;
+  }
+
   address {
     font-style: normal;
   }
@@ -224,7 +232,7 @@ textarea {
    .hero-area {
     display: flex;
     justify-content: center;
-    background: url('../img/')
+    background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
    }
 
    .hero-area h1 {
@@ -274,6 +282,7 @@ textarea {
    .features {
     display: flex;
     justify-content: center;
+    background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
    }
 
    .features h2 {
@@ -283,6 +292,7 @@ textarea {
    .features article {
      width: 63%;
      margin: 30px 0;
+     img
    }
 
    .features .features-items {
